@@ -19,9 +19,9 @@ const EventListItem =(props)=>{
 			</div>
 			<div className="card-body bg bg-dark">
 				<div className="card-text text-white">
-					<p>Date and time: { eventList.eventSchedule } </p>
+					<p>Date and time: { eventList.eventDate } </p>
 					<p>Venue: { eventList.eventVenue } </p>
-					<p>Description: { eventList.eventDescription } </p>
+					<p>Description: { eventList.eventDes } </p>
 				</div>
 			</div>
         </div>

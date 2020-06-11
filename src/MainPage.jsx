@@ -1,24 +1,24 @@
 import React from 'react';
 import Header from './Header';
 import EventListGroup from './EventListGroup';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class MainPage extends React.Component{
     constructor(){
         super();
-        this.State={
+        this.state={
             eventName:'',
             eventVenue:'',
             eventDate:'',
             eventDes:'',
             eventList:[]
-
         }
         this.onChange=this.onChange.bind(this);
     }
 onChange(e) {
         
-        const { name,value}=e.target;
+        const { name,value }=e.target;
         this.setState((prevState)=>({
             [name]: value
         })
@@ -53,7 +53,7 @@ deleteEvent = (eName) => {
         const { eventList }=this.state;
         return(
             <div className="container">
-                <Header noOfEvents = {eventList.length }/>
+                <Header noOfEvents = { eventList.length }/>
                 
             <button type="button" 
             className="btn btn-primary" 
